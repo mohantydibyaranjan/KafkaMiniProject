@@ -18,7 +18,7 @@ public class OrderController {
     }
 
     /**
-     * Endpoint to receive an order and send it to Kafka.
+     * Endpoint to receive an order, save it to the database, and send it to Kafka.
      *
      * @param order the order to be sent
      * @return a confirmation message
