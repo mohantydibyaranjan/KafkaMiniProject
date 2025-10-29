@@ -5,3 +5,12 @@ spring:
     bootstrap-servers: localhost:9092
     consumer:
       group-id: my-group
+  datasource:
+    url: jdbc:mysql://localhost:3306/consumer_db
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
